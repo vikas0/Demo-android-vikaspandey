@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/deliveryListFragment">
+
+    <fragment
+            android:id="@+id/deliveryListFragment"
+            android:name="com.vikaspandey.demo1.ui.deliveryList.DeliveryListFragment"
+            android:label="Things To Deliver"
+            tools:layout="@layout/delivery_list_fragment">
+
+        <action android:id="@+id/showDeliveryDetail"
+                app:destination="@id/deliveryDetailFragment"
+        />
+    </fragment>
+
+    <fragment
+            android:id="@+id/deliveryDetailFragment"
+              android:name="com.vikaspandey.demo1.ui.deliveryDetail.DeliveryDetailFragment"
+              android:label="Delivery Detail"
+              tools:layout="@layout/delivery_detail_fragment">
+
+        <argument
+
+                android:name="delivery_item_id"
+                  app:argType="integer"
+        />
+    </fragment>
+</navigation>
