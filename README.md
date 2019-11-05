@@ -9,7 +9,7 @@ Concepts used:
 1) mvvm design pattern
 2) dagger 2 for dependency Injection
 3) Language is kotline
-4) paging, databinding librries feom android jetpack 
+4) paging, databinding libraries feom android jetpack 
 5) Room database and live data for reactiveness
 6) coroutines for asyn tasks
 7) androidx test library for android test and junit 4 for unit test, mockito for mocking dependencies in test classes
